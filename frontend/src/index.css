@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #0071e3;
+  color: white;
+}
+
+.pill-btn {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-2.5 text-base font-normal transition-colors duration-200;
+}
+
+.link-chevron {
+  @apply inline-flex items-center gap-1 text-accent hover:underline underline-offset-2;
+}

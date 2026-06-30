@@ -1,0 +1,27 @@
+# Node
+node_modules/
+dist/
+frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/**/__pycache__/
+
+# Database
+*.db
+portfolio.db
+
+# Env
+.env
+.env.local
+
+# Editor swap files
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
