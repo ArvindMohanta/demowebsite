@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: portfolio-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://your-frontend.vercel.app
+      - key: DATABASE_URL
+        value: sqlite:///./portfolio.db
