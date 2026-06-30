@@ -13,8 +13,8 @@ This is a production-style portfolio website built with modern web technologies,
 - **Responsive Design** for all devices
 
 **Portfolio Owner:** M. Arvind Mohanta  
-**Profile:** Researcher || SDV for Next-Gen Intelligent Vehicles || AI & Cloud Computing  
-**Education:** PhD in AI from IIT Hyderabad, BTech from IIIT Bhubaneswar
+**Profile:** Researcher || AI in Healthcare || SDV & Edge AI for Next-Gen Intelligent Vehicles  
+**Education:** PhD in Electrical and Electronics Engineering (EEE) from IIT Guwahati (Jan 2026 - Present), BTech from IIIT Bhubaneswar
 
 ---
 
@@ -26,6 +26,7 @@ This is a production-style portfolio website built with modern web technologies,
 - **React Router DOM 6.20.0** - Client-side routing
 - **Tailwind CSS 3.3.5** - Styling framework
 - **Lucide React 0.295.0** - Icon library
+- **Framer Motion** - Scroll-driven reveal animations
 - **Axios 1.6.0** - HTTP client
 
 ### Backend
@@ -62,7 +63,8 @@ portfolio/
 │   │   │   ├── UltrasonicRadarDetail.jsx   # Ultrasonic radar detail page
 │   │   │   └── SpeechRecognitionDetail.jsx # Speech recognition detail page
 │   │   ├── components/
-│   │   │   └── Header.jsx                  # Navigation bar
+│   │   │   ├── Header.jsx                  # Frosted sticky navigation bar
+│   │   │   └── Reveal.jsx                  # Scroll-triggered fade/slide-in wrapper
 │   │   ├── services/
 │   │   │   └── api.js                      # Axios configuration
 │   │   ├── App.jsx                         # Main app with routing
@@ -168,8 +170,8 @@ portfolio/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rayukoto44-wq/portfolio.git
-cd portfolio
+git clone https://github.com/ArvindMohanta/demowebsite.git
+cd demowebsite
 ```
 
 ### 2. Frontend Setup
@@ -284,10 +286,14 @@ This will populate the database with all 7 projects automatically.
 
 ## 🎨 Design Features
 
+Apple-inspired design system (apple.com aesthetic):
+
+- **Monochrome Palette:** Black/white/gray base with a single signature blue accent (`#0071e3`)
+- **Typography:** System font stack (`-apple-system`/SF Pro), large tracking-tight headlines, generous whitespace
+- **Frosted Sticky Nav:** Translucent, backdrop-blurred header that stays pinned across pages
+- **Scroll-Driven Animations:** Sections fade/slide into view on scroll via a reusable Framer Motion `Reveal` component
+- **Alternating Black/White Sections:** Full-bleed dark hero and CTA sections for visual rhythm, consistent across all pages including project detail pages
 - **Responsive Design:** Mobile, tablet, and desktop optimized
-- **Gradient Styling:** Modern gradient backgrounds and accents
-- **Color-Coded Projects:** Each project has unique color theme
-- **Interactive Elements:** Hover effects, transitions, and animations
 - **Accessibility:** Semantic HTML, ARIA labels where needed
 - **Performance:** Optimized with Vite and code splitting
 
@@ -319,7 +325,7 @@ This creates optimized production build in `frontend/dist/`
 
 ## 📞 Contact Information
 
-- **Email:** arvind.mohanta@example.com
+- **Email:** marvindmohanta@gmail.com
 - **LinkedIn:** [linkedin.com/in/arvindmohanta](https://linkedin.com/in/arvindmohanta)
 - **GitHub:** [github.com/ArvindMohanta](https://github.com/ArvindMohanta)
 
@@ -344,6 +350,7 @@ Frontend is enabled to connect from:
 - axios@1.6.0
 - tailwindcss@3.3.5
 - lucide-react@0.295.0
+- framer-motion
 
 ### Backend
 - fastapi
@@ -408,15 +415,15 @@ This portfolio is open source and available for educational purposes.
 **M. Arvind Mohanta** - Researcher and Developer
 
 **Background:**
-- PhD in Artificial Intelligence (IIT Hyderabad)
-- BTech in Computer Science (IIIT Bhubaneswar)
-- Expertise in SDV, Edge AI, Cloud Computing, RF Engineering, Embedded Systems
+- PhD in Electrical and Electronics Engineering, IIT Guwahati (Jan 2026 - Present)
+- Former Research Scholar, TiHAN-IIT Hyderabad (Jul 2025 - Dec 2025) - SDV & Foundation Models
+- BTech in Electronics and Telecommunication Engineering (IIIT Bhubaneswar)
+- Expertise in AI/ML, SDV, Edge AI, Cloud Computing, RF Engineering, Embedded Systems
 
 **Current Focus:**
-- Next-generation intelligent vehicle systems
+- AI in Healthcare - intelligent systems for medical diagnosis and clinical decision support
 - Edge AI and Foundation Models
 - Signal Processing and RF Engineering
-- Automotive cybersecurity
 
 ---
 
@@ -448,5 +455,5 @@ For issues, questions, or suggestions, please reach out via the contact form on 
 
 ---
 
-**Last Updated:** December 2025  
-**Version:** 1.0.0
+**Last Updated:** June 2026  
+**Version:** 1.1.0
